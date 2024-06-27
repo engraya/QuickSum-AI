@@ -13,6 +13,7 @@ export const articleApi = createApi({
             return headers;
         },
     }),
+
     endpoints: (builder) => ({
         getSummary: builder.query({
             // encodeURIComponent() function encodes special characters that may be present in the parameter values
@@ -21,5 +22,4 @@ export const articleApi = createApi({
         }),
     }),
 })
-
-export const { useLazyGetSummaryQuery } = articleApi
+export const { useLazyGetSummaryQuery } : any = articleApi

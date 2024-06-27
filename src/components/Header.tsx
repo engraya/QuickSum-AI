@@ -10,22 +10,24 @@ function Header() {
         <Link to="/">
         <div className="flex items-center">
           <img className="h-7 w-auto" src={logo} alt="logo" />
-          <span className="font-bold">QuickSum AI</span>
+          <span className="font-bold text-xl bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">QuickSum AI</span>
         </div>
         </Link>
       </div>
-      <div className="text-gray-900 font-bold cursor-pointer">
+      <div className="hidden lg:block text-gray-900 font-bold cursor-pointer">
         <Link to="/">
-        <h3>
+        <h3 className="text-lg">
           Home
         </h3>
         </Link>
       </div>
       <div className="flex items-center justify-end gap-3">
-      <button 
+        <Link to="https://github.com/engraya/QuickSum-AI" target="_blank">
+        <button 
         className="px-4 py-2 bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
         <BsGithub />
         </button>
+        </Link>
       </div>
     </div>
   </div>
