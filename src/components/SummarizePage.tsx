@@ -84,7 +84,7 @@ function SummarizePage() {
         onChange={(e) => setArticle({ ...article, url: e.target.value })}
         onKeyDown={handleKeyDown}
         required
-        className="rounded-full w-full h-14 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-teal-200 focus:border-teal-200" type="text" name="query" id="query" />
+        className="rounded-full w-full h-14 bg-transparent py-2 pl-8 pr-32 outline-none border-2 border-gray-100 shadow-md hover:outline-none focus:ring-teal-200 focus:border-teal-200"/>
         <button 
         type="submit" 
         className="absolute inline-flex items-center h-10 px-2 py-2 text-sm bg-gradient-to-r from-green-400 to-blue-500 text-white duration-150 ease-in-out rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg outline-none right-3 top-2 bg-teal-600 sm:px-6 sm:text-base sm:font-medium hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
